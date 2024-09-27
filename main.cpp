@@ -2,7 +2,7 @@
  * @brief Utility function testing.
  ******************************************************************************/
 #include <vector>
-
+#include "dense_layer.h"
 #include "utils.h"
 
 /*******************************************************************************
@@ -17,6 +17,8 @@ int main()
     utils::vector::print(numbers);
     utils::vector::shuffle(numbers);
     utils::vector::print(numbers);
+
+    DenseLayer d1{3, 2}
 
     const std::vector<std::string> text{"Neural", "network", "implementation"};
     utils::vector::print(text);
